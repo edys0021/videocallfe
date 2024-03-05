@@ -12,8 +12,8 @@ import WebcamOffIcon from "../../icons/WebcamOffIcon";
 import WebcamOnIcon from "../../icons/Bottombar/WebcamOnIcon";
 import MicOffIcon from "../../icons/MicOffIcon";
 import MicOnIcon from "../../icons/Bottombar/MicOnIcon";
-import MicPermissionDenied from "../../icons/MicPermissionDenied";
-import CameraPermissionDenied from "../../icons/CameraPermissionDenied";
+// import MicPermissionDenied from "../../icons/MicPermissionDenied";
+// import CameraPermissionDenied from "../../icons/CameraPermissionDenied";
 import DropDown from "../DropDown";
 import DropDownCam from "../DropDownCam";
 import DropDownSpeaker from "../DropDownSpeaker";
@@ -395,7 +395,7 @@ export function JoiningScreen({
 
                       <div className="absolute xl:bottom-6 bottom-4 left-0 right-0">
                         <div className="container grid grid-flow-col space-x-4 items-center justify-center md:-m-2">
-                          {isMicrophonePermissionAllowed ? (
+                          {/* {isMicrophonePermissionAllowed ? ( */}
                             <ButtonWithTooltip
                               onClick={_toggleMic}
                               onState={micOn}
@@ -403,11 +403,11 @@ export function JoiningScreen({
                               OnIcon={MicOnIcon}
                               OffIcon={MicOffIcon}
                             />
-                          ) : (
+                          {/* ) : (
                             <MicPermissionDenied />
-                          )}
+                          )} */}
 
-                          {isCameraPermissionAllowed ? (
+                          {/* {isCameraPermissionAllowed ? ( */}
                             <ButtonWithTooltip
                               onClick={_toggleWebcam}
                               onState={webcamOn}
@@ -415,9 +415,9 @@ export function JoiningScreen({
                               OnIcon={WebcamOnIcon}
                               OffIcon={WebcamOffIcon}
                             />
-                          ) : (
+                          {/* ) : (
                             <CameraPermissionDenied />
-                          )}
+                          )} */}
                         </div>
                       </div>
                     </div>
