@@ -379,6 +379,7 @@ export function JoiningScreen({
                         className={
                           "rounded-[10px] h-full w-full object-cover flex items-center justify-center flip"
                         }
+                        id="videoElement"
                       />
 
                       {!isMobile ? (

@@ -188,3 +188,10 @@ input[type="radio"]:checked + label{
 #carousel-3:checked ~ .control-3 {
   display: block;
 }
+
+#videoElement
+{
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+    -moz-transform:rotateY(180deg); /* Firefox */
+}
